@@ -1,11 +1,13 @@
 ---
+name: twistcodeLAMP
+hostname: twistcode
 # VM configurations
 #ubuntu: "14.04"
 
 # Networks to configure
-#networks:
-#    - type: bridged
-#      ip: "192.168.178.40"
+networks:
+    - type: private
+      ip: "192.168.33.10"
 
 # Additional ports to forward
 #ports:
@@ -18,7 +20,7 @@
 #      to: /vagrant/code
 
 # Web server to run
-#webserver: apache
+webserver: apache
 
 # PHP version to use for CLI
 #php-cli: "5.6"
@@ -27,9 +29,9 @@
 #mysql: "5.5"
 
 # Additional PHP modules to install
-#php-modules:
-#    - php7.0-gd
-#    - php7.1-mbstring
+php-modules:
+    - php-zip
+    - php-mbstring
 #    - php7.2-xml
 #    - php5.6-gd
 
