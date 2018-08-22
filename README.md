@@ -28,7 +28,7 @@ DevBox provides a PHP development environment using Vagrant and VirtualBox. The 
     ├── Vagrantfile            
     └── README.md
 
-` code ` folder is synced with ` /home/vagrant ` folder in VM.
+` code ` folder is synced with ` /vagrant ` folder in VM.
 
 ### Site Informations
 Website can be accessed at http://localhost:8000
